@@ -12,10 +12,7 @@ const Hero = () => {
     const companies = [
         Images.comp1,
         Images.comp2,
-        Images.comp3,
-        Images.comp4,
-        Images.comp5,
-        Images.comp6,
+        Images.comp3
     ];
 
     return (
@@ -29,14 +26,16 @@ const Hero = () => {
 
                         <AnimationContainer animation="fadeUp" delay={0.4}>
                             <h1 className="text-5xl lg:text-6xl font-medium !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-foreground to-neutral-500">
-                                Effortless Real Estate Trading
+                                Track your 
+                                <br/>
+                                System Performance
+                                
                             </h1>
                         </AnimationContainer>
 
                         <AnimationContainer animation="fadeUp" delay={0.6}>
                             <p className="text-sm md:text-base lg:text-lg text-muted-foreground">
-                                Simplify your property journey with our comprehensive platform. Buy, sell, or manage properties with ease using our innovative tools and expert guidance.
-                            </p>
+                            Inveris is an advanced system designed to revolutionize the way solar service providers handle inverter error data. As the solar energy industry expands, so does the complexity of managing large-scale operations, especially when it comes to troubleshooting and maintaining thousands of solar inverters. Traditional methods of handling error logs are often unorganized, repetitive, and time-consuming, creating significant operational inefficiencies.                            </p>
                         </AnimationContainer>
                     </div>
 
@@ -44,7 +43,7 @@ const Hero = () => {
                         <div className="w-full">
                             <Link href="/">
                                 <Button size="md" className="w-full md:w-auto">
-                                    Start free trial
+                                    Book a Demo
                                 </Button>
                             </Link>
                         </div>
@@ -56,7 +55,7 @@ const Hero = () => {
                                 Trusted by Industry Leaders
                             </p>
                             <div className="w-full relative max-w-[calc(100vw-2rem)] lg:max-w-lg">
-                                <Marquee className="[--duration:40s] select-none [--gap:2rem]">
+                                <Marquee className="[--duration:20s] select-none [--gap:2rem]">
                                     {[...Array(10)].map((_, index) => (
                                         <div key={index} className="flex items-center justify-center text-muted-foreground h-16">
                                             {companies[index % companies.length]({ className: "w-auto h-5" })}
@@ -76,7 +75,7 @@ const Hero = () => {
                             <div className="pointer-events-none hidden lg:block absolute inset-y-0 right-1/4 w-1/3 h-full bg-gradient-to-l from-background z-50"></div>
                             <div className="lg:absolute lg:inset-0">
                                 <Image
-                                    src="/images/dashboard.png"
+                                    src="/images/Stats.jpg"
                                     alt="hero"
                                     sizes="1000px"
                                     width={1024}
