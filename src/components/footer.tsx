@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import AnimationContainer from './global/animation-container';
 import Wrapper from "./global/wrapper";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect"
+
 
 const PRODUCT_LINKS = [
     { label: "Property Search", href: "#" },
@@ -172,6 +174,11 @@ const Footer = () => {
                     </div>
                 </AnimationContainer>
             </Wrapper>
+
+            <div className="h-[20rem] lg:h-[20rem] hidden md:flex items-center justify-center">
+                <TextHoverEffect text="INVERIS" />
+            </div>
+
         </footer>
     );
 };
