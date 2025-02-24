@@ -99,7 +99,7 @@ const Navbar = () => {
                             ) : (
                                 <Link href="/signup">
                                     <Button size="sm">
-                                        Get started
+                                        Book a Demo
                                     </Button>
                                 </Link>
                             )}
